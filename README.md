@@ -2,8 +2,10 @@
 
 The Arm Art Gallery collects, preserves, and interprets works of art of the highest quality, representing the Armenian artistic traditions, for the inspiration.
 
-`HTML5 (semantic tags)`
+Used-
 
-`CSS (BEM/ Grid)`
+    HTML5 (semantic tags)
 
-`Icons from fontAwesome`
+    CSS (BEM/ Grid)
+
+    Icons from fontAwesome
