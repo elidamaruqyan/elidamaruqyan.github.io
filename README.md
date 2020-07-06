@@ -10,4 +10,4 @@ Used
 
     3.Icons from fontAwesome
 
-<i> <a href="http://arm-modart.com/app/index.html">Website</a> </i>
+<i> <a href="http://arm-modart.com/app/index.html" target="_blank">Website</a> </i>
