@@ -4,8 +4,8 @@ The Arm Art Gallery collects, preserves, and interprets works of art of the high
 
 Used
 
-    `HTML5 (semantic tags)`
+    1.HTML5 (semantic tags)
 
-    `CSS (BEM/ Grid)`
+    2.CSS (BEM/ Grid)
 
-    `Icons from fontAwesome`
+    3.Icons from fontAwesome
