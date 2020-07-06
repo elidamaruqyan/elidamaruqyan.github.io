@@ -1,0 +1,71 @@
+nav.is-fixed-top {
+    position: fixed;
+}
+
+.navbar-brand > .navbar-item {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-menu .navbar-item {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: 600ms;
+    display: flex;
+    align-items: center;
+    font-family: "Arial";
+}
+
+.navbar-menu .navbar-item:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 1px;
+    right: -32%;
+    top: 50%;
+    background-color: red;
+    transition: 600ms;
+}
+
+.navbar-menu .navbar-item.active {
+    color: white !important;
+    transform: scale(2.5);
+    font-size: 20px;
+}
+
+.navbar-menu .navbar-item.active:before {
+    width: 100%;
+    right: 0;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar-start {
+    position: fixed;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 43vh;
+    justify-content: space-around;
+    font-size: 27px;
+    align-items: center;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.page:nth-child(odd) {
+    background-color: #ddb85f;
+}
+
+.page:nth-child(even) {
+    background-color: #ff7e77;
+}
+
+.page {
+    text-align: center;
+}
