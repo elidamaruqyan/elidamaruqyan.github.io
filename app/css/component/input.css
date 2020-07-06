@@ -1,0 +1,4 @@
+input::-webkit-input-placeholder {
+    color: var(--primary-color-lt);
+    font-size: var(--type-smallest);
+}

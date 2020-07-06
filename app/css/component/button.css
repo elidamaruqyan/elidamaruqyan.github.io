@@ -1,4 +1,4 @@
-.global-button-style {
+.btn {
     min-width: 200px;
     height: 60px;
     position: relative;
@@ -6,15 +6,15 @@
     align-items: center;
     justify-content: center;
     font-size: var(--type-small);
-    font-weight: 600;
+    font-weight: var(--type-semi-bold);
     text-transform: uppercase;
     background-color: transparent;
-    color: var(--light-color);
+    color: var(--clr-ntrl-min);
     border: 0;
     cursor: pointer;
 }
 
-.global-button-style::after, .global-button-style::before {
+.btn::after, .btn::before {
     content: '';
     position: absolute;
     display: block;
@@ -23,22 +23,22 @@
     transition: 600ms;
 }
 
-.global-button-style::before{
+.btn::before{
     top: 0;
     left: 0;
     border-top: 1px solid var(--main-brand-color);
     border-left: 1px solid var(--main-brand-color);
 }
 
-.global-button-style::after{
+.btn::after{
     right: 0;
     bottom: 0;
     border-bottom: 1px solid var(--main-brand-color);
     border-right: 1px solid var(--main-brand-color);
 }
 
-.global-button-style:hover::after,
-.global-button-style:hover::before{
+.btn:hover::after,
+.btn:hover::before{
     width: 100%;
     transition: 600ms;
 }
