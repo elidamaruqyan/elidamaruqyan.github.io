@@ -249,6 +249,7 @@ time.timeline-item-desc__year::before {
     font-size: var(--type-small);
     font-weight: var(--type-regular);
     line-height: 1.4;
+    color: var(--clr-ntrl-min);
 }
 
 .timeline-item--reversed .timeline-item-desc__text {

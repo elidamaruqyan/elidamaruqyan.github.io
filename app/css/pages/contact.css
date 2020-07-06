@@ -22,7 +22,7 @@
 }
 
 .get-in-touch-list {
-    max-width: 70%;
+    max-width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: var(--type-large);
