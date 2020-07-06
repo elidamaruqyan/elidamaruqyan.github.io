@@ -1,11 +1,13 @@
 /* GENERAL RULE */
 :root {
     /*********** Color Variables *************************/
-    --light-color: rgba(255, 255, 255, 1);
+    --clr-ntrl-min: rgba(255, 255, 255, 1);
+    --clr-ntrl-max: rgba(0, 0, 0, 1);
     --main-brand-color: rgba(217, 186, 140, 1);
+    --secondary-dark-color: rgba(35, 35, 35, 1);
     --main-dark-bg: rgba(51, 51, 51, 1);
-    --secondary-dark-color: rgba(0, 0, 0, 1);
-    --black-maple-gray: rgba(35, 35, 35, 1);
+    --primary-color-dk: rgba(100, 100, 100, 1);
+    --primary-color-lt: rgba(204, 204, 204, 1);
 
     /**************** Gap and Duration Variables **********************/
     --vmargin: 30px;
@@ -29,6 +31,13 @@
     --type-larger: 3.125rem; /* 50px */
     --type-largest: 4.375rem; /* 70px */
     --type-jumbo: 5.625; /* 90px */
+
+    --type-light: 300;
+    --type-regular: 400;
+    --type-medium: 500;
+    --type-semi-bold: 600;
+    --type-bold: 700;
+    --type-extra-bold: 900;
 }
 
 * {
@@ -41,7 +50,8 @@ html {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--main-dark-bg);
-    color: var(--light-color);
+    line-height: 1.4;
+    color: var(--clr-ntrl-min);
 
     box-sizing: border-box;
     margin: 0;
@@ -62,7 +72,7 @@ body::-webkit-scrollbar-track {
 }
 
 a {
-    color: var(--light-color);
+    color: var(--clr-ntrl-min);
     text-decoration: none;
 }
 
@@ -90,21 +100,21 @@ img {
     grid-area: main;
 }
 
-.footer-wrapper {
+.footer {
     grid-area: footer;
 }
 
 .shadow-title {
     position: absolute;
-    top: 17px;
+    top: 15px;
     left: 50%;
     width: 100%;
-    font-weight: 700;
+    font-weight: var(--type-bold);
     font-size: 55px;
     text-transform: capitalize;
     text-align: center;
     line-height: 1;
-    color: var(--light-color);
+    color: var(--clr-ntrl-min);
     opacity: 0.04;
     transform: translate(-50%);
 }
@@ -116,8 +126,9 @@ img {
 
 .section-header__sub-info {
     font-size: var(--type-smallest);
+    font-weight: var(--type-light);
     text-transform: uppercase;
-    color: var(--light-color);
+    color: var(--clr-ntrl-min);
 }
 
 .section-header__title {
@@ -127,5 +138,5 @@ img {
     background: -webkit-linear-gradient(#907047, var(--main-brand-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 20px 0;
+    margin: 0 0 20px;
 }

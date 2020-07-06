@@ -10,7 +10,7 @@
     top: 0;
     bottom: 0;
     z-index: var(--zIndex-5);
-    background-color: var(--secondary-dark-color);
+    background-color: var(--clr-ntrl-max);
     animation: cssAnimation 1s ease-in 5s forwards;
     animation-fill-mode: forwards;
     overflow: hidden;

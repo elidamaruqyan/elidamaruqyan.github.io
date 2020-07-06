@@ -58,14 +58,6 @@ nav.is-fixed-top {
     transform: translate(0, -50%);
 }
 
-.page:nth-child(odd) {
-    background-color: #ddb85f;
-}
-
-.page:nth-child(even) {
-    background-color: #ff7e77;
-}
-
 .page {
     text-align: center;
 }
