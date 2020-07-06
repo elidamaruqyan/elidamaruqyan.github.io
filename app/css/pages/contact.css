@@ -1,0 +1,94 @@
+.contact-banner {
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/museum.jpeg") no-repeat fixed center;
+    background-size: cover;
+    margin-bottom: 150px;
+}
+
+.contact-banner p {
+    font-size: var(--type-largest);
+    font-weight: var(--type-bold);
+    font-style: italic;
+    color: var(--main-brand-color);
+    text-decoration: line-through;
+}
+
+.get-in-touch,
+.question-box {
+    text-align: center;
+}
+
+.get-in-touch-list {
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: var(--type-large);
+    margin: 80px auto 50px;
+}
+
+.get-in-touch-list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.get-in-touch-list__item i, span {
+    font-size: var(--type-large);
+    color: var(--main-brand-color);
+    padding-bottom: 15px;
+}
+
+.get-in-touch-list__item p {
+    color: var(--clr-ntrl-min);
+    font-weight: var(--type-medium);
+    padding-bottom: 7px;
+}
+
+.get-in-touch-list__item--center {
+    border-left: 3px solid var(--main-brand-color);
+    border-right: 3px solid var(--main-brand-color);
+}
+
+.question-box {
+    margin: 70px auto 100px;
+}
+
+.question-box h3 {
+    max-width: 40%;
+    font-size: var(--type-large);
+    font-weight: var(--type-semi-bold);
+    text-transform: uppercase;
+    margin: 0 auto 65px;
+}
+
+.question-box-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-box-form .btn {
+    margin-top: 40px;
+}
+
+.positioned-box {
+    position: relative;
+}
+
+.hands__left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+}
+
+.hands__right {
+    position: absolute;
+    right: 0;
+    bottom: -130px;
+    width: 33%;
+}

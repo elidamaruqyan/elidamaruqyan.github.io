@@ -8,17 +8,6 @@
     background-color: var(--secondary-dark-color);
     z-index: var(--zIndex-4);
 }
-.header-wrapper::before {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 50%;
-    background: #333333;
-    height: 100%;
-    z-index: -1;
-    transform: skew(30deg);
-    left: -31px;
-}
 
 .header-wrapper .container {
     display: grid;

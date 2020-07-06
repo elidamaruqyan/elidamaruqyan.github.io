@@ -2,9 +2,183 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+          content="Arm-Art Gallery  unique artworks of the modern painters from Europe and Armenia">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="art, sculpture, modern, armenian">
+    <meta name="author" content="Elida Marukyan">
+    <meta property="og:title" content="Armenain Art"/>
+    <meta property="og:description" content="Armenian Online Art Gallery"/>
+
+    <title>Home</title>
+
+    <!-- Favicon links--->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&display=swap"
+          rel="stylesheet">
+
+    <!--Style Links -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="print"/>
+    <!--Font Awesome kit's -->
+    <script src="https://kit.fontawesome.com/a961982f40.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<!--================ Loader Area Start =================-->
+<div class="loader ">
+    <div class="triangle">
+        <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+    </div>
+</div>
+<!--================ Loader Area End =================-->
+
+<div class="grid-container">
+
+    <!--================ Header Area Start =================-->
+    <header class="header-wrapper">
+        <div class="container">
+            <a href="index.html" class="header-logo-link">
+                <img src="assets/images/logo.png" alt="Logo" width="100" class="header-logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-list__item"><a href="index.html">Home</a></li>
+                    <li class="header-list__item"><a href="about.html">About</a></li>
+                    <li class="header-list__item"><a href="gallery.html">Gallery</a></li>
+                    <li class="header-list__item header-list__item--active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header-toggle-btn"><span></span></button>
+        </div>
+    </header>
+    <!--================ Header Area End =================-->
+
+    <main class="content-wrapper">
+
+        <!--================ Contact Area Star =================-->
+        <section class="contact-wrapper">
+            <div class="contact-banner">
+                <p> Contact Us</p>
+            </div>
+            <div class="container">
+                <div class="get-in-touch">
+                    <h2 class="section-header__title">Get in touch with us</h2>
+                    <ul class="get-in-touch-list">
+                        <li class="get-in-touch-list__item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Phone</span>
+                            <p>+374 55 55 55 55</p>
+                            <p>+374 55 55 55 65</p>
+                        </li>
+                        <li class="get-in-touch-list__item get-in-touch-list__item--center">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Address</span>
+                            <p>2/45 Tower Street, New York, USA</p>
+                            <p>2/55 Tower Street, New York, USA</p>
+                        </li>
+                        <li class="get-in-touch-list__item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                            <p>arm-art@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="positioned-box">
+                <div class="question-box">
+                    <h3>If you got any question
+                        please do not hesitate to send us a message
+                    </h3>
+                    <div class="question-box-form">
+                        <form action="">
+                            <label for="name" class="question-box-form-label">
+                                <input id="name" type="text" placeholder="Your Name" value="">
+                            </label>
+                            <label for="email" class="question-box-form-label">
+                                <input id="email" type="email" placeholder="Your Email" value="">
+                            </label>
+                            <label for="subject" class="question-box-form-label question-box-form-label--full-width">
+                                <input id="subject" type="text" placeholder="Subject" value="">
+                            </label>
+                            <label for="message" class="question-box-form-label question-box-form-label--full-width">
+                                <textarea id="message" placeholder="Message"></textarea>
+                            </label>
+
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="hands">
+                    <div class="hands__left">
+                        <img src="assets/images/left-hand.png" alt="Left Hand" width="100">
+                    </div>
+                    <div class="hands__right">
+                        <img src="assets/images/right-hand.png" alt="Right Hand" width="100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ Contact Area End =================-->
+
+    </main>
+
+    <!--================ Footer Area Start =================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-wrapper-list footer-wrapper--logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo" width="100" class="header-logo">
+                    </a>
+                </div>
+                <div class="footer-wrapper-list">
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>2/45 Tower Street, New York, USA</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+374 98 05 05 05</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fas fa-envelope"></i>
+                            <p>arm-art@gmail.com</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fas fa-globe-americas"></i>
+                            <a href="index.html">arm-modart.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-wrapper-list">
+                    <ul class="social-links social-list">
+                        <li class="social-links__item"><a href="" class="fa fa-instagram"></a></li>
+                        <li class="social-links__item"><a href="" class="fa fa-twitter"></a></li>
+                        <li class="social-links__item"><a href="" class="fa fa-behance"></a></li>
+                        <li class="social-links__item"><a href="" class="fa fa-facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================ Footer Area End =================-->
+</div>
 </body>
 </html>

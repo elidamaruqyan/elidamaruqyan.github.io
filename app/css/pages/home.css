@@ -5,7 +5,7 @@
     background-color: var(--secondary-dark-color);
     z-index: var(--zIndex-3);
     padding: 200px 0 110px;
-    margin-bottom: 150px;
+    margin-bottom: var(--vmargin);
 }
 
 .hero-content {
@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     z-index: var(--zIndex-4);
-    margin-left: 150px;
+    margin-left: var(--vmargin);
 }
 
 .hero-content-text {
@@ -260,7 +260,7 @@ time.timeline-item-desc__year::before {
 /*!***************** Our Projects Start**********************!*/
 .our-projects {
     position: relative;
-    margin-top: 150px;
+    margin-top: var(--vmargin);
 }
 
 .our-projects-list {
@@ -369,7 +369,10 @@ time.timeline-item-desc__year::before {
 }
 
 .view-more {
-    margin-top: 150px;
+    margin-top: var(--vmargin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .view-more .btn {
@@ -389,11 +392,10 @@ time.timeline-item-desc__year::before {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.9)), url("../../assets/images/mountain.jpeg");
-    background-position: right;
+    background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.9)), url("../../assets/images/mountain.jpeg") no-repeat fixed right;
     background-size: cover;
     padding-top: 50px;
-    margin-top: 150px;
+    margin-top: var(--vmargin);
 }
 
 .testimonials::before {
@@ -493,7 +495,7 @@ time.timeline-item-desc__year::before {
 /*!***************** Subscribe Start**********************!*/
 
 .subscribe-newsletter {
-    margin: 150px auto;
+    margin: var(--vmargin) auto;
 }
 
 .subscribe-header {
@@ -537,11 +539,12 @@ time.timeline-item-desc__year::before {
 .subscribe-form__group input {
     height: 100%;
     min-width: 300px;
+    width: auto;
     color: var(--clr-ntrl-min);
     background-color: unset;
     border: 1px solid var(--main-brand-color);
     padding: 0 15px;
-    caret-color: var(--main-brand-color);
+
 }
 
 .subscribe-form__group button {
