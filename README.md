@@ -1,4 +1,4 @@
-# http://arm-modart.com/app/index.html
+# arm-modart.com/app/index.html
 
 The Arm Art Gallery collects, preserves, and interprets works of art of the highest quality, representing the Armenian artistic traditions, for the inspiration.
 
