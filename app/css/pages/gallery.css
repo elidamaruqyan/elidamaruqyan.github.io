@@ -1,0 +1,8 @@
+.gallery-banner {
+    background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/gallery-bg.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.the-gallery-wrapper{
+    margin: 150px auto;
+}
