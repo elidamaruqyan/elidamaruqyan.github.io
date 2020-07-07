@@ -1,7 +1,13 @@
+/*!********* About Banner Are Start ***************!*/
+
 .about-banner {
     background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/gallery.jpg") no-repeat center;
     background-size: cover;
 }
+
+/*!********* About Banner Are End ***************!*/
+
+/*!********* About Gallery  Area Start  ***************!*/
 
 .general-info {
     position: relative;
@@ -56,7 +62,7 @@
     height: 210px;
     position: absolute;
     right: 46%;
-    bottom: -28%;
+    bottom: -10%;
     display: flex;
     justify-content: space-evenly;
     color: var(--clr-ntrl-max);
@@ -85,3 +91,12 @@
     align-self: flex-end;
 }
 
+/*!********* About Gallery  Area End  ***************!*/
+
+/*!********* About Artist  Area Start  ***************!*/
+
+.about-artist {
+    margin-top: 230px;
+}
+
+/*!********* About Artist  Area End  ***************!*/

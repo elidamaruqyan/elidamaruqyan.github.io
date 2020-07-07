@@ -1,7 +1,12 @@
+/*!********* Contact Banner Are Start ***************!*/
 .contact-banner {
     background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/museum.jpeg") no-repeat fixed center;
     background-size: cover;
 }
+
+/*!********* Contact Banner Are End ***************!*/
+
+/*!********* Get In Touch Area Start  ***************!*/
 
 .get-in-touch,
 .question-box {
@@ -39,6 +44,10 @@
     border-left: 3px solid var(--main-brand-color);
     border-right: 3px solid var(--main-brand-color);
 }
+
+/*!********* Get In Touch Area End  ***************!*/
+
+/*!********* Question Area Start  ***************!*/
 
 .question-box {
     margin: 70px auto 100px;
@@ -80,3 +89,5 @@
     bottom: -130px;
     width: 33%;
 }
+
+/*!********* Question Area End  ***************!*/
