@@ -29,21 +29,20 @@
 }
 
 .footer-list__item i {
-    margin-right: 15px;
-    color: #606060;
+    color: var(--primary-color-lt);
     transition: 800ms;
+    margin-right: 15px;
 }
 
-.footer-list__item a, p {
-    color: #606060;
+.footer-list__item .footer-list__item__info{
+    color: var(--primary-color-lt);
     font-size: var(--type-smaller);
     font-weight: var(--type-medium);
     transition: 800ms;
 }
 
 .footer-list__item:hover i,
-.footer-list__item:hover p,
-.footer-list__item:hover a {
+.footer-list__item:hover .footer-list__item__info {
     cursor: pointer;
     color: var(--main-brand-color);
 }

@@ -1,63 +1,87 @@
-nav.is-fixed-top {
-    position: fixed;
+.about-banner {
+    background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/gallery.jpg") no-repeat center;
+    background-size: cover;
 }
 
-.navbar-brand > .navbar-item {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.navbar-menu .navbar-item {
+.general-info {
     position: relative;
-    color: black;
-    text-decoration: none;
-    transition: 600ms;
     display: flex;
-    align-items: center;
-    font-family: "Arial";
 }
 
-.navbar-menu .navbar-item:before {
+.align-center-container {
+    max-width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.general-info__text {
+    max-width: 32%;
+    position: relative;
+    font-size: var(--type-small);
+    padding: 50px;
+}
+
+.general-info__text::before,
+.general-info__text::after {
     content: '';
     position: absolute;
     display: block;
-    width: 0;
-    height: 1px;
-    right: -32%;
-    top: 50%;
-    background-color: red;
+    width: 30%;
+    height: 100%;
     transition: 600ms;
 }
 
-.navbar-menu .navbar-item.active {
-    color: white !important;
-    transform: scale(2.5);
-    font-size: 20px;
+.general-info__text::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid var(--main-brand-color);
+    border-left: 1px solid var(--main-brand-color);
 }
 
-.navbar-menu .navbar-item.active:before {
-    width: 100%;
+.general-info__text::after {
     right: 0;
+    bottom: 0;
+    border-bottom: 1px solid var(--main-brand-color);
+    border-right: 1px solid var(--main-brand-color);
 }
 
-.page {
-    height: 100vh;
-    width: 100%;
+.general-info__list {
+    max-height: 500px;
+    max-width: 40%;
 }
 
-.navbar-start {
-    position: fixed;
-    left: 80px;
+.general-info__list--desc {
+    width: 24%;
+    height: 210px;
+    position: absolute;
+    right: 46%;
+    bottom: -28%;
     display: flex;
-    flex-direction: column;
-    height: 43vh;
-    justify-content: space-around;
-    font-size: 27px;
-    align-items: center;
-    top: 50%;
-    transform: translate(0, -50%);
+    justify-content: space-evenly;
+    color: var(--clr-ntrl-max);
+    background-color: var(--main-brand-color);
+    padding: 50px 25px;
 }
 
-.page {
+.general-info__list__item h5 {
+    font-size: 25px;
+    font-weight: 700;
     text-align: center;
+    text-decoration: line-through;
+    color: var(--primary-color-lt);
+    padding-bottom: 20px;
 }
+
+.general-info__list__item p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-color-lt);
+    padding-bottom: 10px;
+}
+
+.general-info__list__item--admissions {
+    align-self: flex-end;
+}
+

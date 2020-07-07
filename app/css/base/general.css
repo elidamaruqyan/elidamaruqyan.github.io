@@ -7,7 +7,8 @@
     --secondary-dark-color: rgba(35, 35, 35, 1);
     --main-dark-bg: rgba(51, 51, 51, 1);
     --primary-color-dk: rgba(100, 100, 100, 1);
-    --primary-color-lt: rgba(204, 204, 204, 1);
+    --primary-color-lt: rgba(96, 96, 96, 1);
+    --primary-color-ltr: rgba(204, 204, 204, 1);
 
     /**************** Gap and Duration Variables **********************/
     --vmargin: 150px;
@@ -124,19 +125,41 @@ img {
     margin: 0 auto 100px;
 }
 
-.section-header__sub-info {
-    font-size: var(--type-smallest);
-    font-weight: var(--type-light);
-    text-transform: uppercase;
-    color: var(--clr-ntrl-min);
-}
-
 .section-header__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: var(--type-larger);
+    font-style: italic;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     background: -webkit-linear-gradient(#907047, var(--main-brand-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0 0 20px;
+}
+
+.section-header__title .lines {
+    width: 200px;
+    height: 1px;
+    display: block;
+    background: var(--main-brand-color);
+    padding: 0;
+    margin: 0 20px;
+}
+
+.banner {
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.banner p {
+    font-size: var(--type-largest);
+    font-weight: var(--type-bold);
+    font-style: italic;
+    color: var(--main-brand-color);
+    text-decoration: line-through;
 }

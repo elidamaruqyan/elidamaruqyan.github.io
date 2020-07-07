@@ -133,7 +133,7 @@
 
 .social-list .fa {
     font-size: var(--type-large);
-    color: #606060;
+    color: var(--primary-color-lt);
     transition: 600ms;
     cursor: pointer;
 }
@@ -145,14 +145,14 @@
 
 /*!********* Hero Are End ***************!*/
 
-/*!********* About Are Start ***************!*/
+/*!********* Timeline Are Start ***************!*/
 
-.about,
-.about-wrapper-body {
+.timeline,
+.timeline-body {
     position: relative;
 }
 
-.about-wrapper-body::before {
+.timeline-body::before {
     content: '';
     position: absolute;
     display: block;
@@ -256,7 +256,7 @@ time.timeline-item-desc__year::before {
     margin-left: auto;
 }
 
-/*!********* About Are End ***************!*/
+/*!********* Timeline Are End ***************!*/
 
 /*!***************** Our Projects Start**********************!*/
 .our-projects {
@@ -545,7 +545,6 @@ time.timeline-item-desc__year::before {
     background-color: unset;
     border: 1px solid var(--main-brand-color);
     padding: 0 15px;
-
 }
 
 .subscribe-form__group button {
@@ -558,61 +557,3 @@ time.timeline-item-desc__year::before {
 }
 
 /*!***************** Subscribe End**********************!*/
-
-/*tuyn hover effect*/
-
-section.head {
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-}
-
-section.head a {
-    width: 652px;
-    height: 78px;
-    line-height: 78px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -326px;
-    margin-top: -39px;
-    font-weight: 200;
-    color: #BABABA;
-    transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
-}
-
-section.head a:before, section.head a:after {
-    color: #000;
-    font-weight: var(--type-extra-bold);
-    font-size: 30px;
-    text-transform: none;
-    display: block;
-    transition: inherit;
-}
-
-section.head a:before {
-    content: attr(data-bf);
-    position: absolute;
-    top: -45px;
-    left: -5px;
-}
-
-section.head a:after {
-    content: attr(data-af);
-    position: absolute;
-    right: 0;
-    bottom: -30px;
-}
-
-section.head a:hover {
-    transform: scale(1.05);
-}
-
-section.head a:hover:before {
-    transform: scale(1.2) translate(-25px, -15px);
-}
-
-section.head a:hover:after {
-    transform: scale(1.2) translate(25px, 15px);
-}
-

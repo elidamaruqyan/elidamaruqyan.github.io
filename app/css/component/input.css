@@ -25,6 +25,6 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-    color: var(--primary-color-lt);
+    color: var(--primary-color-ltr);
     font-size: var(--type-smallest);
 }

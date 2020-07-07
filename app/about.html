@@ -11,7 +11,7 @@
     <meta property="og:title" content="Armenain Art"/>
     <meta property="og:description" content="Armenian Online Art Gallery"/>
 
-    <title>About</title>
+    <title>Home</title>
 
     <!-- Favicon links--->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
@@ -37,56 +37,146 @@
 </head>
 <body>
 
-<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+<!--================ Loader Area Start =================-->
+<div class="loader ">
+    <div class="triangle">
+        <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+    </div>
+</div>
+<!--================ Loader Area End =================-->
 
-        <div id="navbar" class="navbar-menu navbar-scroll">
-            <div class="navbar-start">
-                <a href="#home" title="Home" class="navbar-item active">Home</a>
-                <a href="#portfolio" title="Portfolio" class="navbar-item">Portfolio</a>
-                <a href="#about" title="About" class="navbar-item">About</a>
-                <a href="#contact" title="Contact" class="navbar-item">Contact</a>
+<div class="grid-container">
+
+    <!--================ Header Area Start =================-->
+    <header class="header-wrapper">
+        <div class="container">
+            <a href="index.html" class="header-logo-link">
+                <img src="assets/images/logo.png" alt="Logo" width="100" class="header-logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-list__item header-list__item--active"><a href="index.html">Home</a></li>
+                    <li class="header-list__item"><a href="about.html">About</a></li>
+                    <li class="header-list__item"><a href="gallery.html">Gallery</a></li>
+                    <li class="header-list__item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header-toggle-btn"><span></span></button>
+        </div>
+    </header>
+    <!--================ Header Area End =================-->
+
+    <main class="content-wrapper">
+        <!--================ About Banner Area Start =================-->
+        <section class="about-banner banner">
+            <p> About Us</p>
+        </section>
+        <!--================ About Banner Area Start =================-->
+
+        <!--================ About Gallery  Area Start =================-->
+        <section class="the-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><span class="lines"></span>
+                        <span>The Gallery</span> <span class="lines"></span></h2>
+                </div>
+                <div class="general-info">
+                    <div class="general-info__list general-info__list--img">
+                        <img src="assets/images/gallery-place.jpeg" alt="Gallery" width="100">
+                    </div>
+                    <div class="general-info__list general-info__list--desc">
+                        <div class="general-info__list__item">
+                            <h5>Opening Hours</h5>
+                            <ul>
+                                <li>
+                                    <p>Tue ‒ Thu: 09am ‒ 07pm</p>
+                                </li>
+                                <li>
+                                    <p>Fri ‒ Mon: 09am ‒ 05pm</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="general-info__list__item general-info__list__item--admissions ">
+                            <h5>ADMISSIONS</h5>
+                            <ul>
+                                <li>
+                                    <p>Adults: $25</p>
+                                </li>
+                                <li>
+                                    <p>Children & Students: free</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="align-center-container">
+                        <h3 class="general-info__text">
+                            The vibrant cultural heritage of Armenia has served as a basis for many contemporary
+                            Armenian artists. With the assistance of different galleries and centres, talented
+                            local
+                            artists have earned worldwide attention and begun to thrive in the modern art scene.
+                            Here’s the list of the best artworks you might want to see out on your trip.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ About Gallery  Area End =================-->
+
+
+        <!--================ About Artists  Area Start =================-->
+
+        <section class="about-artist">
+            <div class="section-header">
+                <h2 class="section-header__title"><span class="lines"></span>
+                    <span>About Our  Artists</span> <span class="lines"></span></h2>
+            </div>
+        </section>
+        <!--================ About Artists  Area End =================-->
+    </main>
+
+    <!--================ Footer Area Start =================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-wrapper-list footer-wrapper--logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo" width="100" class="header-logo">
+                    </a>
+                </div>
+                <div class="footer-wrapper-list">
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <address class="footer-list__item__info">2/45 Tower Street, New York, USA</address>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p class="footer-list__item__info">+374 98 05 05 05</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fas fa-envelope"></i>
+                            <p class="footer-list__item__info">arm-art@gmail.com</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fas fa-globe-americas"></i>
+                            <a href="index.html" class="footer-list__item__info">arm-modart.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-wrapper-list">
+                    <ul class="social-links social-list">
+                        <li class="social-links__item"><a href="" class="fa fa-instagram"></a></li>
+                        <li class="social-links__item"><a href="" class="fa fa-twitter"></a></li>
+                        <li class="social-links__item"><a href="" class="fa fa-behance"></a></li>
+                        <li class="social-links__item"><a href="" class="fa fa-facebook"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-
-<section id="home" class="page">
-    <div class="container">
-        <h2 class="title">Home</h2>
-    </div>
-</section>
-
-<section id="portfolio" class="page">
-    <div class="container">
-        <h2 class="title">Portfolio</h2>
-    </div>
-</section>
-
-<section id="about" class="page">
-    <div class="container">
-        <h2 class="title">About</h2>
-    </div>
-</section>
-
-<section id="contact" class="page">
-    <div class="container">
-        <h2 class="title">Contact</h2>
-    </div>
-</section>
-
-<script src="./js/vanillajs-scrollspy.js"></script>
-<script>
-    const navbar = document.querySelector('#navbar');
-    const scrollspy = new VanillaScrollspy(navbar);
-    scrollspy.init();
-</script>
+    </footer>
+    <!--================ Footer Area End =================-->
+</div>
 </body>
 </html>

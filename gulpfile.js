@@ -8,6 +8,8 @@ const cssnano = require('gulp-cssnano');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
+const imagemin = require('gulp-imagemin');
+
 
 // Gulp task to add autoprefixer
 gulp.task('default', () =>
@@ -37,6 +39,13 @@ gulp.task('pages', function () {
             removeComments: true
         }))
         .pipe(gulp.dest('./dist'));
+});
+
+//Gulp task to minify images
+gulp.task('images', function () {
+    return gulp.src('./app/assets/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/assets/images'))
 });
 
 // Clean output directory
