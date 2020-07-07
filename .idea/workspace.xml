@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4486d35-2361-4328-9c0a-baae0195d0f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,14 +45,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1740" />
-          <entry key="html" value="2271" />
+          <entry key="html" value="2285" />
           <entry key="js" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1740" />
-          <entry key="HTML" value="2271" />
+          <entry key="HTML" value="2285" />
           <entry key="JavaScript" value="96" />
         </counts>
       </usages-collector>
@@ -67,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
-              <caret line="14" column="96" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="14" selection-end-column="96" />
+              <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
               <folding>
                 <element signature="n#div#0;n#section#0;n#div#1;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#section#0;n#div#1;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -100,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/contact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+              <caret line="14" column="96" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="14" selection-end-column="96" />
               <folding>
                 <element signature="n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#div#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -115,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/gallery.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -192,10 +189,10 @@
         <option value="$PROJECT_DIR$/app/css/pages/about.css" />
         <option value="$PROJECT_DIR$/app/css/main.css" />
         <option value="$PROJECT_DIR$/app/css/pages/gallery.css" />
+        <option value="$PROJECT_DIR$/app/contact.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/about.html" />
         <option value="$PROJECT_DIR$/app/gallery.html" />
-        <option value="$PROJECT_DIR$/app/contact.html" />
       </list>
     </option>
   </component>
@@ -311,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28034000" />
+    <option name="totallyTimeSpent" value="28420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -462,10 +459,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="96" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="14" selection-end-column="96" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="14" column="96" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="14" selection-end-column="96" />
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
           <folding>
             <element signature="n#div#0;n#section#0;n#div#1;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#0;n#div#1;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -499,19 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
-          <folding>
-            <element signature="n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>

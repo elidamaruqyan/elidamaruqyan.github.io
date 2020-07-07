@@ -121,6 +121,10 @@
     height: 100%;
 }
 
+.video-button-play-inner {
+    cursor: pointer;
+}
+
 /*!********* About Artist  Area End  ***************!*/
 
 /*!********* Interesting Details  Area Start  ***************!*/
