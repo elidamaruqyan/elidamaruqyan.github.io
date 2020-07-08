@@ -67,7 +67,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2971" />
+          <entry key="css" value="2990" />
           <entry key="html" value="2403" />
           <entry key="js" value="566" />
           <entry key="json" value="32" />
@@ -75,7 +75,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2971" />
+          <entry key="CSS" value="2990" />
           <entry key="HTML" value="2403" />
           <entry key="JSON" value="32" />
           <entry key="JavaScript" value="566" />
@@ -107,16 +107,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/css/pages/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="167" column="61" lean-forward="true" selection-start-line="167" selection-start-column="61" selection-end-line="167" selection-end-column="61" />
+            <state relative-caret-position="349">
+              <caret line="478" column="16" lean-forward="true" selection-start-line="478" selection-start-column="16" selection-end-line="478" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/pages/about.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -128,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/media/media.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+            <state relative-caret-position="233">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#1571#2693#0" />
               </folding>
@@ -194,7 +194,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>about-wra</find>
       <find>section-header__sub-info</find>
       <find>about-wrapper</find>
       <find>about-content</find>
@@ -223,6 +222,7 @@
       <find>.timeline-item--reversed .timeline-item-desc</find>
       <find>.the-gallery-wrapper</find>
       <find>.detailsItem_wrapper</find>
+      <find>.arrow-btn</find>
       <find>.section-header__title</find>
     </findStrings>
     <replaceStrings>
@@ -383,12 +383,12 @@
       <updated>1594043840326</updated>
       <workItem from="1594043841424" duration="1077000" />
       <workItem from="1594103904349" duration="16692000" />
-      <workItem from="1594199560109" duration="19327000" />
+      <workItem from="1594199560109" duration="19579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49841000" />
+    <option name="totallyTimeSpent" value="50093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -666,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/pages/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="167" column="61" lean-forward="true" selection-start-line="167" selection-start-column="61" selection-end-line="167" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/base/general.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -694,20 +687,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/pages/about.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="109" column="21" lean-forward="true" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/media/media.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+        <state relative-caret-position="233">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#1571#2693#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/pages/about.css">
+    <entry file="file://$PROJECT_DIR$/app/css/pages/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="109" column="21" lean-forward="true" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+        <state relative-caret-position="349">
+          <caret line="478" column="16" lean-forward="true" selection-start-line="478" selection-start-column="16" selection-end-line="478" selection-end-column="16" />
         </state>
       </provider>
     </entry>
