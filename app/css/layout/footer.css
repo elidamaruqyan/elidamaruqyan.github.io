@@ -11,7 +11,7 @@
 }
 
 .footer-wrapper--logo a {
-    display: block;
+    display: flex;
 }
 
 .footer-wrapper-list {
@@ -26,6 +26,11 @@
     align-items: center;
     margin: 10px 0;
     transition: 800ms;
+}
+
+.footer-wrapper-list--social-links{
+    justify-content: flex-end;
+    padding-right: 15px;
 }
 
 .footer-list__item i {
@@ -50,5 +55,5 @@
 .footer-wrapper-list .social-links {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 60%;
 }

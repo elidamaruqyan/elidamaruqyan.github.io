@@ -104,7 +104,7 @@
 .vertical-panel__info__title {
     width: 16px;
     text-transform: uppercase;
-    font-size: var(--type-smaller);
+    font-size: var(--type-smallest);
     font-weight: var(--type-bold);
     letter-spacing: 0.5rem;
     white-space: nowrap;
@@ -452,6 +452,7 @@
 .testimonials-list-item__desc {
     font-size: var(--type-smaller);
     font-weight: var(--type-medium);
+    line-height: 1.7;
     color: #a9a6a6;
     margin: 20px auto 50px;
 }
