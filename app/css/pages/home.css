@@ -322,6 +322,7 @@
     font-weight: var(--type-regular);
     font-size: var(--type-large);
     text-transform: uppercase;
+    text-align: center;
     transform: translateY(-100%);
     transition-delay: 0.05s;
     opacity: 0;
@@ -332,6 +333,7 @@
     font-weight: var(--type-semi-bold);
     font-size: var(--type-base);
     text-decoration: line-through;
+    text-align: center;
     color: var(--main-brand-color);
     transform: translateY(-100%);
     transition-delay: 0s;
