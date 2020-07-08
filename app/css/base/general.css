@@ -29,6 +29,7 @@
     --type-small: 1rem; /* 16px */
     --type-base: 1.25rem; /* 20px */
     --type-large: 1.5625rem; /* 25px */
+    --type-large-responsive: 1.875rem; /* 35px */
     --type-larger: 3.125rem; /* 50px */
     --type-largest: 4.375rem; /* 70px */
     --type-jumbo: 5.625; /* 90px */
@@ -44,6 +45,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body,
@@ -53,7 +55,6 @@ html {
     background-color: var(--main-dark-bg);
     line-height: 1.4;
     color: var(--clr-ntrl-min);
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -163,3 +164,4 @@ img {
     color: var(--main-brand-color);
     text-decoration: line-through;
 }
+

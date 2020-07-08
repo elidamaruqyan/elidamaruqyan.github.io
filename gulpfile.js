@@ -1,39 +1,41 @@
 'use strict';
 
 const gulp = require('gulp');
-const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
+const cssnano = require('gulp-cssnano');
+const concat = require('gulp-concat');
 const runSequence = require('run-sequence');
 const htmlmin = require('gulp-htmlmin');
-const cssnano = require('gulp-cssnano');
 const del = require('del');
 const browserSync = require('browser-sync').create();
-const concat = require('gulp-concat');
+const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
+const autoprefixer = require('autoprefixer');
+const cssnext = require('postcss-cssnext');
+const shortcss = require('postcss-short');
 
 
-// Gulp task to add autoprefixer
-gulp.task('default', () =>
-    gulp.src('./app/*.css')
-        .pipe(autoprefixer({
-            browsers: ['defaults'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist'))
-);
-
-// Gulp task to minify CSS files
-gulp.task('styles', function () {
-    return gulp.src('./app/css/*.css')
-    // Minify the file
+// Gulp task fto add autoprefixer
+gulp.task('css', function() {
+    var plugins = [
+        shortcss,
+        cssnext,
+        autoprefixer({browsers: ['> 1%'], cascade: false})
+    ];
+    return gulp.src('app/css/**/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss(plugins))
         .pipe(cssnano())
-        .pipe(concat('all.css'))
+        .pipe(concat('main.css'))
+        .pipe(sourcemaps.write('.'))
         // Output
         .pipe(gulp.dest('./dist/css'))
 });
 
 // Gulp task to minify HTML files
 gulp.task('pages', function () {
-    return gulp.src(['./app/**/*.html'])
+    return gulp.src(['app/**/*.html'])
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -41,11 +43,15 @@ gulp.task('pages', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-//Gulp task to minify images
-gulp.task('images', function () {
-    return gulp.src('./app/assets/images/*')
+// Gulp task to minify Image files
+gulp.task('imagemin', function () {
+    var imgSrc = 'app/assets/images/*.+(png|jpg|gif|jpeg)',
+        imgDst = 'dist/assets/images';
+
+    gulp.src(imgSrc)
+        .pipe(changed(imgDst))
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/assets/images'))
+        .pipe(gulp.dest(imgDst));
 });
 
 // Clean output directory
@@ -55,7 +61,6 @@ gulp.task('clean', () => del(['dist']));
 gulp.task('default', ['clean'], function () {
     runSequence(
         'styles',
-        'scripts',
         'pages'
     );
 });
@@ -75,5 +80,8 @@ gulp.task('bs-reload', function () {
 // Watch Css and Html files, doing different things with each.
 gulp.task('watch', ['browserSync'], function () {
     gulp.watch('app/**/*.html', ['pages']);
-    gulp.watch('app/**/*.css', ['styles']);
+    gulp.watch('app/**/*.css', ['css']);
+    gulp.watch('app/assets/images/*', ['imagemin']);
 });
+
+
