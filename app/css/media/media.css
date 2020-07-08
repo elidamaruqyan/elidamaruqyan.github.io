@@ -1,0 +1,266 @@
+/*Extra Large devices (large desktops, 1200px and up) */
+@media (max-width: 1300px) {
+    .container {
+        width: calc(100% - 100px);
+    }
+
+    .hero-content {
+        margin-left: 80px;
+    }
+
+    .testimonials-list-item {
+        max-width: 74%;
+    }
+
+    .testimonials::before, .arrow__left {
+        left: 20%;
+    }
+
+    .arrow__right {
+        right: 20%;
+    }
+}
+
+/*Largest devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .hero-content__desc {
+        font-size: var(--type-large);
+    }
+
+    .hero-content__desc span {
+        font-size: var(--type-larger);
+    }
+}
+
+/* Larger devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .section-header__title {
+        font-size: var(--type-large-responsive);
+    }
+
+    .general-info__list--desc {
+        right: 28%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {
+    .testimonials::before {
+        left: 100%;
+    }
+
+    .vertical-panel {
+        grid-template-rows: repeat(1, 2fr 1fr);
+    }
+
+    .social-list {
+        padding-bottom: 30px;
+    }
+
+    .timeline-body::before,
+    .timeline-item-desc::after,
+    .timeline-item-desc::before {
+        display: none;
+    }
+
+    .timeline-item-desc, .timeline-item--reversed .timeline-item-desc {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .timeline-item--reversed .timeline-item__img {
+        grid-column-start: 1;
+    }
+
+    .timeline-item {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .get-in-touch-list {
+        max-width: 100%;
+    }
+
+    .question-box h3 {
+        max-width: 70%;
+    }
+
+    label {
+        width: 80%;
+    }
+
+    .hands__right {
+        bottom: -50px;
+    }
+
+    .banner {
+        margin-bottom: 90px;
+    }
+    .detailsList{
+        width: 100%;
+    }
+    .detailsItem_wrapper{
+        padding-right: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .banner {
+        min-height: 430px;
+        margin-bottom: 60px;
+    }
+
+    .banner p {
+        font-size: var(--type-larger);
+    }
+
+    .hero {
+        margin-bottom: 60px;
+    }
+
+    .header-wrapper .container {
+        width: 96%;
+    }
+
+    .hero-content__title, .hero-content__desc span {
+        font-size: var(--type-large);
+    }
+
+    .header-list__item a {
+        padding: 0;
+    }
+
+    .header-logo {
+        width: 80%;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .hero-content-img {
+        display: none;
+    }
+
+    .hero-content-text {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timeline-item__img {
+        padding: 0;
+    }
+
+    .testimonials-list-item--review {
+        max-width: 100%;
+    }
+
+    .arrow__left {
+        left: 0;
+    }
+
+    .arrow__right {
+        right: 0;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header__title .lines {
+        width: 60px;
+    }
+
+    .our-projects-list {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'title' 'nav' 'main ' 'aside' 'footer';
+    }
+
+    .our-projects-list__item h3 {
+        font-size: var(--type-base);
+    }
+
+    .subscribe-form__group input {
+        min-width: 180px;
+    }
+
+    .general-info {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .general-info__list {
+        max-width: 100%;
+        max-height: inherit;
+    }
+
+    .general-info__list--desc {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .general-info__list__item--admissions {
+        align-self: center;
+    }
+
+    .detailsList_item:nth-child(even) {
+        justify-content: flex-start;
+    }
+
+    .about-artist {
+        margin: 100px 0;
+    }
+
+    .main-gallery-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .get-in-touch-list {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .question-box h3 {
+        max-width: 100%;
+        font-size: var(--type-base);
+    }
+
+    label {
+        width: 80%;
+    }
+
+    .hands__left {
+        top: 60px;
+    }
+
+    .hands__right {
+        bottom: 0;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-wrapper--logo img {
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    .footer-list__item .footer-list__item__info {
+        font-size: var(--type-smallest);
+    }
+
+    .footer-wrapper-list .social-links {
+        width: 100%;
+    }
+
+    .btn {
+        min-width: auto;
+        padding: 0 20px;
+    }
+}

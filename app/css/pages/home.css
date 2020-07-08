@@ -11,7 +11,7 @@
 .hero-content {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     z-index: var(--zIndex-4);
     margin-left: var(--vmargin);
 }
@@ -55,14 +55,14 @@
     position: absolute;
     right: -30px;
     top: -30px;
-    width: 35%;
+    width: 90%;
     height: 100%;
     border: 1px solid var(--main-brand-color);
     z-index: -1;
 }
 
 .hero-content-img img {
-    width: 45%;
+    width: 100%;
 }
 
 .back-illustration,
@@ -165,17 +165,20 @@
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(50%, 1fr));
     grid-auto-flow: dense;
     margin-bottom: 70px;
 }
 
-.timeline-item--reversed .timeline-item-desc {
-    grid-column-start: 1;
+.timeline-item-desc {
+    padding: 100px 0 0 160px;
+    position: relative;
 }
 
-.timeline-item-desc {
-    padding-top: 100px;
+.timeline-item--reversed .timeline-item-desc {
+    grid-column-start: 1;
+    padding-right: 160px;
+    padding-left: 0;
 }
 
 .timeline-item--reversed .timeline-item__img {
@@ -186,12 +189,15 @@
     padding: 0 50px;
 }
 
-.timeline-item-desc__year,
-.timeline-item-desc__text {
-    padding: 0 160px;
+.p-l {
+    padding-left: 160px;
 }
 
-time.timeline-item-desc__year {
+.p-r {
+    padding-right: 160px;
+}
+
+.timeline-item-desc__year {
     display: block;
     font-size: var(--type-base);
     font-style: italic;
@@ -202,31 +208,31 @@ time.timeline-item-desc__year {
     position: relative;
 }
 
-time.timeline-item-desc__year::after,
-time.timeline-item-desc__year::before {
+.timeline-item-desc::after,
+.timeline-item-desc::before {
     position: absolute;
     content: '';
     display: block;
     left: -5px;
-    top: 7px;
+    top: 22%;
 }
 
-time.timeline-item-desc__year::after {
+.timeline-item-desc::after {
     height: 1px;
     width: 160px;
     background: white;
-    top: 11px;
+    top: 23%;
 }
 
-time.timeline-item-desc__year::before {
+.timeline-item-desc::before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--clr-ntrl-min);
 }
 
-.timeline-item--reversed time::after,
-.timeline-item--reversed time::before {
+.timeline-item--reversed .timeline-item-desc::after,
+.timeline-item--reversed .timeline-item-desc::before {
     left: unset;
     right: -5px;
 }
@@ -242,7 +248,8 @@ time.timeline-item-desc__year::before {
     line-height: 1.47em;
     letter-spacing: 0;
     color: var(--main-brand-color);
-    padding: 15px 160px 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .timeline-item-desc__text {
@@ -463,7 +470,7 @@ time.timeline-item-desc__year::before {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 75%;
+    top: 65%;
     background: unset;
     border: unset;
     transition: 800ms;
