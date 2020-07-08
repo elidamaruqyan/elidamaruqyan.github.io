@@ -1,7 +1,7 @@
 /*Extra Large devices (large desktops, 1200px and up) */
 @media (max-width: 1300px) {
     .container {
-        width: calc(100% - 100px);
+        width: 90%;
     }
 
     .hero-content {
@@ -40,6 +40,13 @@
 
     .general-info__list--desc {
         right: 28%;
+    }
+    .our-projects-list__item h3{
+        font-size: 16px;
+    }
+
+    .header-logo {
+        width: 62%;
     }
 }
 
