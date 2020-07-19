@@ -1,10 +1,10 @@
-label {
+.form-label {
     width: 50%;
     display: flex;
     margin-bottom: 24px;
 }
 
-input, textarea {
+.form-input, .form-text-area {
     width: 100%;
     font-size: var(--type-smallest);
     color: var(--clr-ntrl-min);
@@ -14,17 +14,21 @@ input, textarea {
     padding: 0 15px;
 }
 
-input {
+.form-input {
     height: 40px;
 }
 
-textarea {
+.form-text-area {
     min-height: 150px;
     padding: 20px 15px;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+.form-input:focus{
+    outline: none;
+}
+
+.form-input::-webkit-input-placeholder,
+.form-text-area::-webkit-input-placeholder {
     color: var(--primary-color-ltr);
     font-size: var(--type-smallest);
 }

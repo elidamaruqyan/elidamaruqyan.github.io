@@ -14,7 +14,7 @@ const imagemin = require('gulp-imagemin');
 const autoprefixer = require('autoprefixer');
 const cssnext = require('postcss-cssnext');
 const shortcss = require('postcss-short');
-
+const deploy      = require('gulp-gh-pages');
 
 // Gulp task fto add autoprefixer
 gulp.task('css', function() {
@@ -45,7 +45,7 @@ gulp.task('pages', function () {
 
 // Gulp task to minify Image files
 gulp.task('imagemin', function () {
-    var imgSrc = 'app/assets/images/*.+(png|jpg|gif|jpeg)',
+    var imgSrc = 'app/assets/images/*.+(jpg|gif|jpeg|svg|png)',
         imgDst = 'dist/assets/images';
 
     gulp.src(imgSrc)
@@ -75,6 +75,11 @@ gulp.task('browserSync', function () {
 
 gulp.task('bs-reload', function () {
     browserSync.reload();
+});
+
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+        .pipe(deploy())
 });
 
 // Watch Css and Html files, doing different things with each.

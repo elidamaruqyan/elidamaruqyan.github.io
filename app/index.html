@@ -36,8 +36,7 @@
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="./css/main.css" type="text/css" media="print"/>
-    <!--Font Awesome kit's -->
-    <script src="https://kit.fontawesome.com/a961982f40.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -294,7 +293,9 @@
                 <div class="subscribe-form">
                     <form action="">
                         <div class="subscribe-form__group">
-                            <input type="email" name="email" value="" placeholder="Your Email Address" required="" value="email">
+                            <label for="subscribe-email">
+                                <input id="subscribe-email" type="email" class="form-input" name="email" value="" placeholder="Your Email Address" required="" value="email">
+                            </label>
                             <button type="submit" class="theme-btn btn-style-three">Subscribe</button>
                         </div>
                     </form>
@@ -347,5 +348,8 @@
     </footer>
     <!--================ Footer Area End =================-->
 </div>
+
+<!--Font Awesome kit's -->
+<script src="https://kit.fontawesome.com/a961982f40.js" crossorigin="anonymous"></script>
 </body>
 </html>
