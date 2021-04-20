@@ -1,0 +1,12 @@
+/*!********* About Banner Are Start ***************!*/.about-banner{background:linear-gradient(rgba(142,139,139,.2),rgba(0,0,0,.7)),url(../../assets/images/gallery.jpg) no-repeat 50%;background-size:cover}
+
+/*!********* About Banner Are End ***************!*/
+/*!********* About Gallery  Area Start  ***************!*/.general-info{-ms-flex-pack:end;display:-ms-flexbox;display:flex;justify-content:flex-end;position:relative}.general-info__list{max-height:610px;max-width:68%}.general-info__list--desc{-ms-flex-pack:space-evenly;background-color:#c5a47e;color:var(--clr-ntrl-min);display:-ms-flexbox;display:flex;height:400px;justify-content:space-evenly;padding:4.8em 3.1em;position:absolute;right:60%;top:12%}.general-info__list__item h5{font-size:var(--type-large);font-weight:var(--type-bold);padding-bottom:20px;text-align:center}.general-info__list__item p{font-size:var(--type-small);font-weight:var(--type-medium);padding-bottom:10px;text-align:center}.general-info__list__item--admissions{-ms-flex-item-align:end;align-self:flex-end}
+
+/*!********* About Gallery  Area End  ***************!*/
+/*!********* About Artist  Area Start  ***************!*/.about-artist{margin:230px 0 150px}.video-wrapper{position:relative}.artist-info{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;background:rgba(167,112,45,.3);display:-ms-flexbox;display:flex;justify-content:center;left:0;position:absolute;top:0}.artist-info,.video-wrapper video{height:100%;width:100%}.video-button-play-inner{cursor:pointer}
+
+/*!********* About Artist  Area End  ***************!*/
+/*!********* Interesting Details  Area Start  ***************!*/.detailsList{margin:0 auto 150px;width:70%}.detailsList_item{display:-ms-flexbox;display:flex;list-style-type:none}.detailsList_item:nth-child(2n){-ms-flex-pack:end;justify-content:flex-end}.detailsItem_wrapper{-ms-flex-align:center;align-items:center;border-bottom:1px solid var(--main-brand-color);display:-ms-flexbox;display:flex;padding:50px 50px 30px 15px}.detailsItem_number{display:-ms-flexbox;display:flex;font-size:4em;padding-right:30px}.detailsItem_number-small{font-size:1.5rem;padding:10px}.detailsItem_info{color:#ababab;font-size:var(--type-base);font-style:italic;font-weight:var(--type-medium)}
+
+/*!********* Interesting Details  Area End  ***************!*/

@@ -89,7 +89,7 @@ img {
 }
 
 .container {
-    width: calc(100% - 260px);
+    width: 91%;
     margin: 0 auto;
 }
 

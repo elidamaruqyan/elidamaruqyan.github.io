@@ -104,7 +104,7 @@
 .vertical-panel__info__title {
     width: 16px;
     text-transform: uppercase;
-    font-size: var(--type-smaller);
+    font-size: var(--type-smallest);
     font-weight: var(--type-bold);
     letter-spacing: 0.5rem;
     white-space: nowrap;
@@ -165,7 +165,7 @@
 
 .timeline-item {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(50%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     grid-auto-flow: dense;
     margin-bottom: 70px;
 }
@@ -322,6 +322,7 @@
     font-weight: var(--type-regular);
     font-size: var(--type-large);
     text-transform: uppercase;
+    text-align: center;
     transform: translateY(-100%);
     transition-delay: 0.05s;
     opacity: 0;
@@ -332,6 +333,7 @@
     font-weight: var(--type-semi-bold);
     font-size: var(--type-base);
     text-decoration: line-through;
+    text-align: center;
     color: var(--main-brand-color);
     transform: translateY(-100%);
     transition-delay: 0s;
@@ -450,6 +452,7 @@
 .testimonials-list-item__desc {
     font-size: var(--type-smaller);
     font-weight: var(--type-medium);
+    line-height: 1.7;
     color: #a9a6a6;
     margin: 20px auto 50px;
 }
@@ -544,7 +547,11 @@
     height: 40px;
 }
 
-.subscribe-form__group input {
+.subscribe-form__group label {
+    height: 100%;
+}
+
+.subscribe-form__group .form-input {
     height: 100%;
     min-width: 300px;
     width: auto;

@@ -52,6 +52,9 @@
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (max-width: 768px) {
+    .section-header__title .lines{
+        width: 13%;
+    }
     .testimonials::before {
         left: 100%;
     }
@@ -176,6 +179,9 @@
         margin-bottom: 50px;
     }
 
+    .section-header__title{
+        font-size: 24px;
+    }
     .section-header__title .lines {
         width: 60px;
     }
