@@ -1,0 +1,34 @@
+.form-label {
+  width: 50%;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.form-input, .form-text-area {
+  width: 100%;
+  font-size: var(--type-smallest);
+  color: var(--clr-ntrl-min);
+  background: #585656;
+  caret-color: var(--main-brand-color);
+  border: 0;
+  padding: 0 15px;
+}
+
+.form-input {
+  height: 40px;
+}
+
+.form-text-area {
+  min-height: 150px;
+  padding: 20px 15px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input::-webkit-input-placeholder,
+.form-text-area::-webkit-input-placeholder {
+  color: var(--primary-color-ltr);
+  font-size: var(--type-smallest);
+}

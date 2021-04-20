@@ -1,0 +1,63 @@
+/*!***************** Animation **********************!*/
+.move-in-left {
+  animation: moveInLeft 2s ease-in-out;
+}
+
+.move-in-left-slowly {
+  animation: moveInLeft 3s ease-in-out;
+}
+
+.move-in-left-slowly-100 {
+  animation: moveInLeft 3.5s ease-in-out;
+}
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+.move-in-right {
+  animation: moveInRight 2.5s ease-in-out;
+}
+
+.move-in-right-slowly {
+  animation: moveInRight 3s ease-in-out;
+}
+
+.move-in-right-slowly-100 {
+  animation: moveInRight 3.5s ease-in-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}

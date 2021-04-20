@@ -1,0 +1,9 @@
+/*!********* Contact Banner Are Start ***************!*/.contact-banner{background:linear-gradient(rgba(142,139,139,.2),rgba(0,0,0,.7)),url(../../assets/images/museum.jpeg) no-repeat fixed 50%;background-size:cover}
+
+/*!********* Contact Banner Are End ***************!*/
+/*!********* Get In Touch Area Start  ***************!*/.get-in-touch,.question-box{text-align:center}.get-in-touch-list{-ms-grid-columns:(1fr)[3];display:-ms-grid;display:grid;font-size:var(--type-large);grid-template-columns:repeat(3,1fr);margin:80px auto 50px;max-width:80%}.get-in-touch-list__item{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding:50px 0}.get-in-touch-list__item i,.get-in-touch-list__item span{color:var(--main-brand-color);font-size:var(--type-large);padding-bottom:15px}.get-in-touch-list__item .get-in-touch-list__item__info{color:var(--clr-ntrl-min);font-size:var(--type-small);font-weight:var(--type-medium);padding-bottom:7px}.get-in-touch-list__item--center{border-left:3px solid var(--main-brand-color);border-right:3px solid var(--main-brand-color)}
+
+/*!********* Get In Touch Area End  ***************!*/
+/*!********* Question Area Start  ***************!*/.question-box{margin:70px auto 100px}.question-box h3{font-size:var(--type-large);font-weight:var(--type-semi-bold);margin:0 auto 65px;max-width:40%;text-transform:uppercase}.question-box-form form{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;justify-content:center}.question-box-form .btn{margin-top:40px}.ask-a-question{position:relative}.hands__left{left:0;position:absolute;top:0;width:20%}.hands__right{bottom:-130px;position:absolute;right:0;width:33%}
+
+/*!********* Question Area End  ***************!*/
