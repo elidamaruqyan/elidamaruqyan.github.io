@@ -1,0 +1,30 @@
+label {
+  width: 50%;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: var(--type-smallest);
+  color: var(--clr-ntrl-min);
+  background: #585656;
+  caret-color: var(--main-brand-color);
+  border: 0;
+  padding: 0 15px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  min-height: 150px;
+  padding: 20px 15px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--primary-color-ltr);
+  font-size: var(--type-smallest);
+}

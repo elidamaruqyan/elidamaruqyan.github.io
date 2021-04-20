@@ -1,0 +1,89 @@
+/*!********* Contact Banner Are Start ***************!*/
+.contact-banner {
+  background: linear-gradient(rgba(142, 139, 139, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/museum.jpeg") no-repeat fixed center;
+  background-size: cover;
+}
+
+/*!********* Contact Banner Are End ***************!*/
+/*!********* Get In Touch Area Start  ***************!*/
+.get-in-touch,
+.question-box {
+  text-align: center;
+}
+
+.get-in-touch-list {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: var(--type-large);
+  margin: 80px auto 50px;
+}
+
+.get-in-touch-list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.get-in-touch-list__item i, .get-in-touch-list__item span {
+  font-size: var(--type-large);
+  color: var(--main-brand-color);
+  padding-bottom: 15px;
+}
+
+.get-in-touch-list__item .get-in-touch-list__item__info {
+  color: var(--clr-ntrl-min);
+  font-size: var(--type-small);
+  font-weight: var(--type-medium);
+  padding-bottom: 7px;
+}
+
+.get-in-touch-list__item--center {
+  border-left: 3px solid var(--main-brand-color);
+  border-right: 3px solid var(--main-brand-color);
+}
+
+/*!********* Get In Touch Area End  ***************!*/
+/*!********* Question Area Start  ***************!*/
+.question-box {
+  margin: 70px auto 100px;
+}
+
+.question-box h3 {
+  max-width: 40%;
+  font-size: var(--type-large);
+  font-weight: var(--type-semi-bold);
+  text-transform: uppercase;
+  margin: 0 auto 65px;
+}
+
+.question-box-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-box-form .btn {
+  margin-top: 40px;
+}
+
+.ask-a-question {
+  position: relative;
+}
+
+.hands__left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+}
+
+.hands__right {
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  width: 33%;
+}
+
+/*!********* Question Area End  ***************!*/

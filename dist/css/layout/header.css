@@ -1,0 +1,96 @@
+/*!********* Header Are Start ***************!*/
+.header-wrapper {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--secondary-dark-color);
+  z-index: var(--zIndex-4);
+}
+
+.header-wrapper .container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  height: 100%;
+}
+
+.header-nav,
+.header-wrapper .header-logo-link {
+  margin: auto 0;
+}
+
+.header-logo {
+  width: 22%;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  text-align: center;
+  margin-left: auto;
+}
+
+.header-list__item a {
+  position: relative;
+  font-size: var(--type-smaller);
+  text-transform: uppercase;
+  color: var(--clr-ntrl-min);
+  cursor: pointer;
+  transition: 600ms;
+  padding: 8px 15px;
+}
+
+.header-list__item a:hover {
+  color: var(--main-brand-color);
+}
+
+.header-list__item a::before,
+.header-list__item a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  background: var(--main-brand-color);
+}
+
+.header-list__item a::before {
+  left: 0;
+}
+
+.header-list__item a::after {
+  right: 0;
+  background: var(--main-brand-color);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.header-list__item a:hover::before {
+  background: var(--main-brand-color);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.header-list__item a:hover::after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.header-list__item--active a {
+  color: var(--main-brand-color);
+}
+
+.header-list__item--active a::before {
+  width: 100%;
+}
+
+.header-toggle-btn {
+  display: none;
+}
+
+/*!********* Header Are End ***************!*/
