@@ -134,9 +134,7 @@ img {
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
-    background: -webkit-linear-gradient(#907047, var(--main-brand-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--main-brand-color);
     margin: 0 0 20px;
 }
 

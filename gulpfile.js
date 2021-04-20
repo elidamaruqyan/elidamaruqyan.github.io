@@ -1,87 +1,95 @@
-'use strict';
+"use strict";
 
-const gulp = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
-const postcss = require('gulp-postcss');
-const cssnano = require('gulp-cssnano');
-const concat = require('gulp-concat');
-const runSequence = require('run-sequence');
-const htmlmin = require('gulp-htmlmin');
-const del = require('del');
-const browserSync = require('browser-sync').create();
-const changed = require('gulp-changed');
-const imagemin = require('gulp-imagemin');
-const autoprefixer = require('autoprefixer');
-const cssnext = require('postcss-cssnext');
-const shortcss = require('postcss-short');
+// Load plugins
+const autoprefixer = require("autoprefixer");
+const browsersync = require("browser-sync").create();
+const cp = require("child_process");
+const cssnano = require("cssnano");
+const del = require("del");
+const gulp = require("gulp");
+const imagemin = require("gulp-imagemin");
+const newer = require("gulp-newer");
+const plumber = require("gulp-plumber");
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
+const sass = require("gulp-sass");
 
-
-// Gulp task fto add autoprefixer
-gulp.task('css', function() {
-    var plugins = [
-        shortcss,
-        cssnext,
-        autoprefixer({browsers: ['> 1%'], cascade: false})
-    ];
-    return gulp.src('app/css/**/*.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss(plugins))
-        .pipe(cssnano())
-        .pipe(concat('main.css'))
-        .pipe(sourcemaps.write('.'))
-        // Output
-        .pipe(gulp.dest('./dist/css'))
-});
-
-// Gulp task to minify HTML files
-gulp.task('pages', function () {
-    return gulp.src(['app/**/*.html'])
-        .pipe(htmlmin({
-            collapseWhitespace: true,
-            removeComments: true
-        }))
-        .pipe(gulp.dest('./dist'));
-});
-
-// Gulp task to minify Image files
-gulp.task('imagemin', function () {
-    var imgSrc = 'app/assets/images/*.+(png|jpg|gif|jpeg)',
-        imgDst = 'dist/assets/images';
-
-    gulp.src(imgSrc)
-        .pipe(changed(imgDst))
-        .pipe(imagemin())
-        .pipe(gulp.dest(imgDst));
-});
-
-// Clean output directory
-gulp.task('clean', () => del(['dist']));
-
-// Gulp task to minify all files
-gulp.task('default', ['clean'], function () {
-    runSequence(
-        'styles',
-        'pages'
-    );
-});
-
-gulp.task('browserSync', function () {
-    browserSync.init({
+// BrowserSync
+function browserSync(done) {
+    browsersync.init({
         server: {
-            baseDir: './app'
+            baseDir: "./app/"
         },
-    })
-});
+        port: 3000
+    });
+    done();
+}
 
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
+// BrowserSync Reload
+function browserSyncReload(done) {
+    browsersync.reload();
+    done();
+}
 
-// Watch Css and Html files, doing different things with each.
-gulp.task('watch', ['browserSync'], function () {
-    gulp.watch('app/**/*.html', ['pages']);
-    gulp.watch('app/**/*.css', ['css']);
-    gulp.watch('app/assets/images/*', ['imagemin']);
-});
+// Clean assets
+function clean() {
+    return del(["./app/assets/"]);
+}
+
+// Optimize Images
+function images() {
+    return gulp
+        .src("./app/assets/images/**/*")
+        .pipe(newer("./dist/assets/images"))
+        .pipe(
+            imagemin([
+                imagemin.gifsicle({ interlaced: true }),
+                imagemin.optipng({ optimizationLevel: 5 }),
+                imagemin.svgo({
+                    plugins: [
+                        {
+                            removeViewBox: false,
+                            collapseGroups: true
+                        }
+                    ]
+                })
+            ])
+        )
+        .pipe(gulp.dest("./dist/assets/images"));
+}
+
+// CSS task
+function css() {
+    return gulp
+        .src("./app/css/**/*.css")
+        .pipe(plumber())
+        .pipe(sass({ outputStyle: "expanded" }))
+        .pipe(gulp.dest("./dist/css/"))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(gulp.dest("./dist/css/"))
+        .pipe(browsersync.stream());
+}
 
 
+
+// Watch files
+function watchFiles() {
+    gulp.watch("./app/css/**/*", css);
+    gulp.watch(["./app/**/*",],
+        gulp.series(browserSyncReload)
+    );
+    gulp.watch("./app/assets/images/**/*", images);
+}
+
+// define complex tasks
+const build = gulp.series(clean, gulp.parallel(css, images));
+const watch = gulp.parallel(watchFiles, browserSync);
+
+// export tasks
+exports.images = images;
+exports.css = css;
+exports.clean = clean;
+exports.build = build;
+exports.watch = watch;
+exports.default = build;
